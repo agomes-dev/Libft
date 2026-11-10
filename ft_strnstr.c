@@ -39,11 +39,11 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
-
+/*
 int main(void)
 {
 	printf("%s\n", ft_strnstr("wo word", "ord",12 ));
 	//printf("%s\n", strnstr("anredre", "\0", 4));
 	printf("%s\n", ft_strnstr("andrreparre", "rre", 12));
 	//printf("%s\n", strnstr("andrreparre", "rre", 12));
-}
+}*/

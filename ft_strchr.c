@@ -25,7 +25,7 @@ char	*ft_strchr(const char *s, int c)
 			return ((char *)&s[i]);
 		i++;
 	}
-	if (s[i] == '\0')
+	if (target == '\0')
 		return ((char *)&s[i]);
 	return (NULL);
 }
@@ -35,7 +35,7 @@ int	main(void)
 	char	s[] = "Carro";
 	int	a;
 
-	a = '\0';
+	a = 'b';
 	printf("%s\n", ft_strchr(s, a));
 	printf("%s\n", strchr(s, a));
 }*/

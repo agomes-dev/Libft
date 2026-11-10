@@ -6,13 +6,13 @@
 /*   By: andrefe2 <andrefe2@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/06 12:02:17 by andrefe2          #+#    #+#             */
-/*   Updated: 2026/11/08 21:58:10 by andrefe2         ###   ########.fr       */
+/*   Updated: 2026/11/10 14:37:48 by andrefe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *ft_calloc(size_t nmemb, size_t size)
+void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*array;
 
@@ -24,7 +24,7 @@ void *ft_calloc(size_t nmemb, size_t size)
 	ft_bzero(array, size);
 	return (array);
 }
-
+/*
 int	main(void)
 {
 	int	*a;
@@ -33,3 +33,4 @@ int	main(void)
 	printf("%d, %d, %d, %d, %d\n", a[0], a[1], a[2], a[3], a[4]);
 	printf("%d, %d, %d, %d, %d\n", a[0], a[1], a[2], a[3], a[4]);
 }
+*/

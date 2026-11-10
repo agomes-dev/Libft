@@ -6,7 +6,7 @@ CFLAGS = -Wall -Werror -Wextra
 
 SRCS =
 
-OBJS =
+OBJS = 
 
 all: $(NAME)
 
