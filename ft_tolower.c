@@ -6,13 +6,13 @@
 /*   By: andrefe2 <andrefe2@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 16:28:29 by andrefe2          #+#    #+#             */
-/*   Updated: 2026/11/08 21:59:29 by andrefe2         ###   ########.fr       */
+/*   Updated: 2026/11/12 15:18:22 by andrefe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_toupper(int c)
+int	ft_tolower(int c)
 {
 	if (c >= 65 && c <= 90)
 		c = c + 32;

@@ -6,7 +6,7 @@
 /*   By: andrefe2 <andrefe2@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 16:22:08 by andrefe2          #+#    #+#             */
-/*   Updated: 2026/11/08 21:49:35 by andrefe2         ###   ########.fr       */
+/*   Updated: 2026/11/12 15:17:29 by andrefe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@ int	ft_toupper(int c)
 		c = c - 32;
 	return (c);
 }
+
 /*
-#include <stdio.h>
 int	main(void)
 {
 	printf("%i", ft_toupper(97));

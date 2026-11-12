@@ -6,7 +6,7 @@
 /*   By: andrefe2 <andrefe2@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/05 18:17:42 by andrefe2          #+#    #+#             */
-/*   Updated: 2026/11/05 18:32:58 by andrefe2         ###   ########.fr       */
+/*   Updated: 2026/11/12 14:54:13 by andrefe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char	*ft_strdup(const char *s)
 {
 	int	i;
-	int	*array;
+	char	*array;
 
 	i = 0;
 	while (s[i] != '\0')
@@ -24,7 +24,7 @@ char	*ft_strdup(const char *s)
 	i = 0;
 	while (s[i] != '\0')
 	{
-		array[i] = str[i];
+		array[i] = s[i];
 		i++;
 	}
 	array[i] = '\0';
