@@ -6,7 +6,7 @@
 /*   By: andrefe2 <andrefe2@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/12 10:43:40 by andrefe2          #+#    #+#             */
-/*   Updated: 2026/11/12 15:03:25 by andrefe2         ###   ########.fr       */
+/*   Updated: 2026/11/13 15:59:38 by andrefe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ static size_t	count_words (const char *str, char sep)
 {
 	size_t	i;
 	size_t count;
-	
+
 	i = 0;
 	count = 0;
 	while (str[i] != '\0')
@@ -47,8 +47,9 @@ static int	write_words(const char *str, char **marray, char sep)
 	size_t	i;
 	size_t	start;
 	size_t count;
-	
+
 	i = 0;
+	count = 0;
 	while (str[i] != '\0')
 	{
 		while (str[i] == sep && str[i] != '\0')
@@ -61,7 +62,7 @@ static int	write_words(const char *str, char **marray, char sep)
         	marray[count] = ft_substr(str, start, i - start);
 			if (marray[count] == (NULL))
 			{
-				free_words(marray, count);	
+				free_words(marray, count);
 				return (0);
 			}
 			count++;
@@ -75,7 +76,7 @@ char **ft_split(char const *s, char c)
 	size_t	words;
 	char	**marray;
 	int		result;
-	
+
 	words = count_words(s, c);
 	marray = malloc((words + 1) * sizeof (char *));
 	if (!marray)
@@ -86,7 +87,7 @@ char **ft_split(char const *s, char c)
 	marray[words] = NULL;
 	return (marray);
 }
-/*	
+/*
 int	main(void)
 {
 	char *str = "AAAA,EEEE,II,OO";
@@ -101,4 +102,4 @@ int	main(void)
 		count++;
 	}
 	return (0);
-}*/	
+}*/
