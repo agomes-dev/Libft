@@ -6,13 +6,13 @@
 /*   By: andrefe2 <andrefe2@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/10 17:37:54 by andrefe2          #+#    #+#             */
-/*   Updated: 2026/11/10 18:13:05 by andrefe2         ###   ########.fr       */
+/*   Updated: 2026/11/14 12:45:06 by andrefe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	int		i;
 	int		len;
@@ -43,4 +43,4 @@ int	main (void)
 {
 	printf("%s\n", ft_strmapi("Hello", ft_change));
 }
-*/		
+*/

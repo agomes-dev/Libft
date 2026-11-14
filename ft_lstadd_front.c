@@ -6,7 +6,7 @@
 /*   By: andrefe2 <andrefe2@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/13 13:48:43 by andrefe2          #+#    #+#             */
-/*   Updated: 2026/11/13 21:51:45 by andrefe2         ###   ########.fr       */
+/*   Updated: 2026/11/14 11:26:01 by andrefe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,9 @@
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	new->next = *lst;
-	*lst = new;
+	if (lst != NULL && new != NULL)
+	{
+		new->next = *lst;
+		*lst = new;
+	}
 }

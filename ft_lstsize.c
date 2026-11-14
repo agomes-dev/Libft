@@ -6,7 +6,7 @@
 /*   By: andrefe2 <andrefe2@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/13 14:40:40 by andrefe2          #+#    #+#             */
-/*   Updated: 2026/11/13 22:15:47 by andrefe2         ###   ########.fr       */
+/*   Updated: 2026/11/14 12:47:18 by andrefe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ unsigned int	ft_lstsize(t_list *lst)
 	}
 	return (count);
 }
-int	main (void)
+/*int	main (void)
 {
 
-}
+}*/

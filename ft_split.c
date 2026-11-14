@@ -6,7 +6,7 @@
 /*   By: andrefe2 <andrefe2@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/12 10:43:40 by andrefe2          #+#    #+#             */
-/*   Updated: 2026/11/13 15:59:38 by andrefe2         ###   ########.fr       */
+/*   Updated: 2026/11/14 12:44:47 by andrefe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,7 +71,7 @@ static int	write_words(const char *str, char **marray, char sep)
 	return (1);
 }
 
-char **ft_split(char const *s, char c)
+char	**ft_split(char const *s, char c)
 {
 	size_t	words;
 	char	**marray;
