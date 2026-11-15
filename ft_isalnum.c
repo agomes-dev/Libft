@@ -6,7 +6,7 @@
 /*   By: andrefe2 <andrefe2@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/01 12:30:26 by andrefe2          #+#    #+#             */
-/*   Updated: 2026/11/08 21:58:25 by andrefe2         ###   ########.fr       */
+/*   Updated: 2026/11/14 22:29:26 by andrefe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,3 +19,9 @@ int	ft_isalnum(int c)
 		return (1);
 	return (0);
 }
+/*
+int	main(void)
+{
+	printf("%d\n", ft_isalnum(56));
+}
+*/

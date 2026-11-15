@@ -6,7 +6,7 @@
 /*   By: andrefe2 <andrefe2@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 13:14:21 by andrefe2          #+#    #+#             */
-/*   Updated: 2026/11/08 21:59:11 by andrefe2         ###   ########.fr       */
+/*   Updated: 2026/11/15 19:29:39 by andrefe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,6 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 }
 /*
 #include <stdio.h>
-
 int	main(void)
 {
 	char	strs[] = "HIAA";

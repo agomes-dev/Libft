@@ -6,7 +6,7 @@
 /*   By: andrefe2 <andrefe2@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/01 12:49:33 by andrefe2          #+#    #+#             */
-/*   Updated: 2026/11/08 21:59:13 by andrefe2         ###   ########.fr       */
+/*   Updated: 2026/11/15 19:22:48 by andrefe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,11 @@ size_t	ft_strlen(const char *s)
 	}
 	return (i);
 }
+/*
+int	main(void)
+{
+	char s[]= "HELLO";
+
+	printf("%zu", ft_strlen(s));
+}
+*/

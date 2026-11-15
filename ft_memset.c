@@ -6,7 +6,7 @@
 /*   By: andrefe2 <andrefe2@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/01 13:32:02 by andrefe2          #+#    #+#             */
-/*   Updated: 2026/11/08 21:59:02 by andrefe2         ###   ########.fr       */
+/*   Updated: 2026/11/15 01:06:51 by andrefe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,15 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (s);
 }
+/*
+int	main(void)
+{
+	char	a[] = "HELLO";
+	char	b[] = "HELLO";
+	int	c = 65;
+	size_t n = 3;
+
+	printf("%s\n", (char *)ft_memset(a, c, n));
+	printf("%s\n", (char *)memset(b, c, n));
+}
+*/

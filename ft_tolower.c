@@ -6,7 +6,7 @@
 /*   By: andrefe2 <andrefe2@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 16:28:29 by andrefe2          #+#    #+#             */
-/*   Updated: 2026/11/12 15:18:22 by andrefe2         ###   ########.fr       */
+/*   Updated: 2026/11/14 22:36:32 by andrefe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,3 +18,10 @@ int	ft_tolower(int c)
 		c = c + 32;
 	return (c);
 }
+/*
+int	main(void)
+{
+	printf("%d\n", ft_tolower('A'));
+	printf("%d\n", ft_tolower('Z'));
+}
+*/
