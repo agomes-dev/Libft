@@ -6,7 +6,7 @@
 /*   By: andrefe2 <andrefe2@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/10 14:47:06 by andrefe2          #+#    #+#             */
-/*   Updated: 2026/11/14 12:44:23 by andrefe2         ###   ########.fr       */
+/*   Updated: 2026/11/16 15:24:51 by andrefe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ static int	count_dig(int n)
 	int	count;
 
 	count = 0;
-	if (n < 0)
+	if (n <= 0)
 		count = 1;
 	while (n != 0)
 	{

@@ -6,7 +6,7 @@
 /*   By: andrefe2 <andrefe2@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/13 22:37:57 by andrefe2          #+#    #+#             */
-/*   Updated: 2026/11/14 12:49:28 by andrefe2         ###   ########.fr       */
+/*   Updated: 2026/11/16 11:54:19 by andrefe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
-	t_size	*current;
-	t_size	*temp;
+	t_list	*current;
+	t_list	*temp;
 
 	if (lst == NULL || del == NULL)
 		return ;

@@ -6,7 +6,7 @@
 /*   By: andrefe2 <andrefe2@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/04 15:20:08 by andrefe2          #+#    #+#             */
-/*   Updated: 2026/11/08 21:58:34 by andrefe2         ###   ########.fr       */
+/*   Updated: 2026/11/16 16:21:53 by andrefe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,28 +21,31 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	m = (unsigned char *)s;
 	target = (unsigned char)c;
 	i = 0;
-	while ((m[i] != '\0') && (i < n))
+	while (i < n)
 	{
 		if (m[i] == target)
 			return ((void *)&m[i]);
 		i++;
 	}
-	if ((m[i] == '\0') && (target == '\0'))
-		return ((void *)&m[i]);
 	return (NULL);
 }
-/*#include <stdio.h>
 
+#include <stdio.h>
+/*
 int	main(void)
 {
 	int	a;
-	size_t	b;
-	char	d[] = "Carro";
+	int	d[] = {1, 2, 3, 4, 5};
 
-	a = '\0';
-	b = 6;
+	a = 8;
 
-	printf("%s\n", (char *)ft_memchr(d, a, b));
-	printf("%s\n", (char *)memchr(d, a, b));
-
-}*/
+	if (ft_memchr(d, a, sizeof(d)))
+		printf("%d\n", *(int *)ft_memchr(d, a, sizeof(d)));
+	else
+		printf("Not found\n");
+	if (memchr(d, a, sizeof(d)))
+		printf("%d\n", *(int *)memchr(d, a, sizeof(d)));
+	else
+		printf("Not found\n");
+}
+*/

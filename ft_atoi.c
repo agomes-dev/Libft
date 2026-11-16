@@ -6,7 +6,7 @@
 /*   By: andrefe2 <andrefe2@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/01 12:01:32 by andrefe2          #+#    #+#             */
-/*   Updated: 2026/11/08 22:12:50 by andrefe2         ###   ########.fr       */
+/*   Updated: 2026/11/16 14:50:22 by andrefe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	ft_atoi(const char *nptr)
 	r = 0;
 	while (nptr[i] == ' ' || (nptr[i] >= 9 && nptr[i] <= 13))
 		i++;
-	while (nptr[i] == '+' || nptr[i] == '-')
+	if (nptr[i] == '+' || nptr[i] == '-')
 	{
 		if (nptr[i] == '-')
 			s = s * (-1);
@@ -36,3 +36,9 @@ int	ft_atoi(const char *nptr)
 	}
 	return (s * r);
 }
+/*
+int	main(void)
+{
+	printf("%d\n", ft_atoi("-1422"));
+}
+*/

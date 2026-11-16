@@ -6,7 +6,7 @@
 /*   By: andrefe2 <andrefe2@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 13:14:21 by andrefe2          #+#    #+#             */
-/*   Updated: 2026/11/15 19:29:39 by andrefe2         ###   ########.fr       */
+/*   Updated: 2026/11/16 12:29:46 by andrefe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 
 	i = 0;
 	if (size == 0)
-		return (0);
+		return (ft_strlen(src));
 	while (i < (size - 1) && src[i] != '\0')
 	{
 		dest[i] = src[i];
@@ -26,9 +26,7 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 	}
 	dest[i] = '\0';
 	i = 0;
-	while (src[i] != '\0')
-		i++;
-	return (i);
+	return (ft_strlen(src));
 }
 /*
 #include <stdio.h>
@@ -38,6 +36,7 @@ int	main(void)
 	char	strd[] = "AB";
 
 	ft_strlcpy(strd, strs, 2);
-	printf("%s", strd);
+	printf("%s\n", strd);
+	printf("%zu", ft_strlcpy(strd, strs, 2));
 }
 */

@@ -6,7 +6,7 @@
 /*   By: andrefe2 <andrefe2@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/01 13:42:01 by andrefe2          #+#    #+#             */
-/*   Updated: 2026/11/15 15:38:16 by andrefe2         ###   ########.fr       */
+/*   Updated: 2026/11/16 11:49:47 by andrefe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void	ft_bzero(void *s, size_t n)
 		i++;
 	}
 }
-
+/*
 int	main(void)
 {
 	char	s1[] = "HELLO";
@@ -35,3 +35,4 @@ int	main(void)
 	printf("%s\n", (char *)	ft_bzero(s1, n));
 	printf("%s\n", (char *)	bzero(s2, n));
 }
+*/

@@ -6,7 +6,7 @@
 /*   By: andrefe2 <andrefe2@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/05 14:04:00 by andrefe2          #+#    #+#             */
-/*   Updated: 2026/11/08 21:52:25 by andrefe2         ###   ########.fr       */
+/*   Updated: 2026/11/16 15:20:41 by andrefe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,27 +14,19 @@
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	unsigned char	*b;
-	unsigned char	*l;
 	size_t			i;
 	size_t			j;
 
-	b = (unsigned char *)big;
-	l = (unsigned char *)little;
 	i = 0;
-	j = 0;
-	if (l[i] == '\0')
-		return ((char *)&b[i]);
-	while (b[i] != '\0' && i < len)
+	if (little[0] == '\0')
+		return ((char *)&big[i]);
+	while (i < len &&  big[i] != '\0')
 	{
-		if (b[i] == l[j])
-		{
-			while (b[i + j] == l[j] && l[j] != '\0')
-				j++;
-			if (l[j] == '\0')
-				return ((char *)&b[i]);
-		}
 		j = 0;
+		while (big[i + j] == little[j] && little[j] != '\0' && j < len - i)
+			j++;
+		if (little[j] == '\0')
+			return ((char *)&big[i]);
 		i++;
 	}
 	return (NULL);
@@ -46,4 +38,5 @@ int main(void)
 	//printf("%s\n", strnstr("anredre", "\0", 4));
 	printf("%s\n", ft_strnstr("andrreparre", "rre", 12));
 	//printf("%s\n", strnstr("andrreparre", "rre", 12));
-}*/
+}
+*/
