@@ -6,7 +6,7 @@
 /*   By: andrefe2 <andrefe2@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/13 14:43:59 by andrefe2          #+#    #+#             */
-/*   Updated: 2026/11/16 15:30:01 by andrefe2         ###   ########.fr       */
+/*   Updated: 2026/11/17 15:17:25 by andrefe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,3 +20,24 @@ t_list	*ft_lstlast(t_list *lst)
 		lst = lst->next;
 	return (lst);
 }
+/*
+int main(void)
+{
+	t_list *first;
+	t_list *second;
+	t_list *third;
+	t_list *last;
+
+	first = ft_lstnew("42");
+	second = ft_lstnew("Porto");
+	third = ft_lstnew("Hello");
+
+	first->next = second;
+	second->next = third;
+
+	last = ft_lstlast(first);
+	printf("Ultimo no: %s\n", (char *)last->content);
+
+	return (0);
+}
+*/

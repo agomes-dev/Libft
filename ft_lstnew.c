@@ -6,7 +6,7 @@
 /*   By: andrefe2 <andrefe2@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/12 15:15:34 by andrefe2          #+#    #+#             */
-/*   Updated: 2026/11/16 11:46:02 by andrefe2         ###   ########.fr       */
+/*   Updated: 2026/11/17 14:40:26 by andrefe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,10 +26,11 @@ t_list	*ft_lstnew(void *content)
 /*
 int	main(void)
 {
-	char	s[] = "BUENAS";
+	t_list	*new_node;
 
-	t_list *n = ft_lstnew(s);
-	printf("%p %p\n", (void *)s, n->content);
-
+	new_node = ft_lstnew("Hello");
+	printf("%s\n", (char *)new_node->content);
+	printf("%s\n", (char *)new_node->next);
+	return (0);
 }
 */

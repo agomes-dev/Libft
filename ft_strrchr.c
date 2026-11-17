@@ -6,7 +6,7 @@
 /*   By: andrefe2 <andrefe2@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/04 12:54:24 by andrefe2          #+#    #+#             */
-/*   Updated: 2026/11/08 21:59:25 by andrefe2         ###   ########.fr       */
+/*   Updated: 2026/11/17 15:43:22 by andrefe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,25 +15,23 @@
 char	*ft_strrchr(const char *s, int c)
 {
 	unsigned char	target;
+	char			*last;
 	int				i;
 
 	i = 0;
+	last = NULL;
 	target = (unsigned char)c;
-	while ((unsigned char)s[i] != '\0')
-		i++;
-	if (target == '\0')
-		return ((char *)&s[i]);
-	while (i > 0)
+	while (s[i] != '\0')
 	{
 		if ((unsigned char)s[i] == target)
-			return ((char *)&s[i]);
-		i--;
+			last = ((char *)&s[i]);
+		i++;
 	}
-	return (NULL);
+	if (target == '\0')
+		return ((char *)&s[i]);
+	return (last);
 }
 /*
-#include <stdio.h>
-
 int	main(void)
 {
 	char s[] = "Carro";
@@ -43,10 +41,11 @@ int	main(void)
 	printf("%s\n", ft_strrchr(s, a));
 	printf("%s\n", strrchr(s, a));
 
-	printf("(%s)\n", ft_strrchr(s, '\0'));
-	printf("(%s)\n", strrchr(s, '\0'));
+	printf("%s\n", ft_strrchr(s, '\0'));
+	printf("%s\n", strrchr(s, '\0'));
 
 
 	printf("%s\n", ft_strrchr(s, '9'));
 	printf("%s\n", strrchr(s, '9'));
-}*/
+}
+*/

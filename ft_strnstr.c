@@ -6,7 +6,7 @@
 /*   By: andrefe2 <andrefe2@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/05 14:04:00 by andrefe2          #+#    #+#             */
-/*   Updated: 2026/11/16 15:20:41 by andrefe2         ###   ########.fr       */
+/*   Updated: 2026/11/17 15:19:26 by andrefe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	i = 0;
 	if (little[0] == '\0')
 		return ((char *)&big[i]);
-	while (i < len &&  big[i] != '\0')
+	while (i < len && big[i] != '\0')
 	{
 		j = 0;
 		while (big[i + j] == little[j] && little[j] != '\0' && j < len - i)

@@ -6,7 +6,7 @@
 /*   By: andrefe2 <andrefe2@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/14 12:25:39 by andrefe2          #+#    #+#             */
-/*   Updated: 2026/11/15 19:04:14 by andrefe2         ###   ########.fr       */
+/*   Updated: 2026/11/17 15:15:08 by andrefe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,4 +36,38 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	}
 	return (new_list);
 }
+/*
+void	 *change_content(void *content)
+{
+	char	 *copy;
 
+	copy = ft_strdup((char *)content);
+	if (copy == NULL)
+	return (NULL);
+	copy[0] = 'p';
+	return (copy);
+}
+
+int main(void)
+{
+	t_list *head;
+	t_list *second;
+	t_list *new_list;
+
+	head = ft_lstnew(ft_strdup("Hello"));
+	second = ft_lstnew(ft_strdup("World"));
+	head->next = second;
+
+	new_list = ft_lstmap(head, change_content, free);
+
+	printf("Original list:\n");
+	printf("%s\n", (char *)head->content);
+	printf("%s\n", (char *)head->next->content);
+
+	printf("\nMapped list:\n");
+	printf("%s\n", (char *)new_list->content);
+	printf("%s\n", (char *)new_list->next->content);
+
+	return (0);
+}
+*/

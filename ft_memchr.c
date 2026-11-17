@@ -6,7 +6,7 @@
 /*   By: andrefe2 <andrefe2@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/04 15:20:08 by andrefe2          #+#    #+#             */
-/*   Updated: 2026/11/16 16:21:53 by andrefe2         ###   ########.fr       */
+/*   Updated: 2026/11/17 15:18:32 by andrefe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,6 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-
-#include <stdio.h>
 /*
 int	main(void)
 {

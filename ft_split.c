@@ -6,16 +6,16 @@
 /*   By: andrefe2 <andrefe2@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/12 10:43:40 by andrefe2          #+#    #+#             */
-/*   Updated: 2026/11/14 12:44:47 by andrefe2         ###   ########.fr       */
+/*   Updated: 2026/11/17 15:20:34 by andrefe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static size_t	count_words (const char *str, char sep)
+static size_t	count_words(const char *str, char sep)
 {
 	size_t	i;
-	size_t count;
+	size_t	count;
 
 	i = 0;
 	count = 0;
@@ -46,7 +46,7 @@ static int	write_words(const char *str, char **marray, char sep)
 {
 	size_t	i;
 	size_t	start;
-	size_t count;
+	size_t	count;
 
 	i = 0;
 	count = 0;
@@ -59,7 +59,7 @@ static int	write_words(const char *str, char **marray, char sep)
 			i++;
 		if (i > start)
 		{
-        	marray[count] = ft_substr(str, start, i - start);
+			marray[count] = ft_substr(str, start, i - start);
 			if (marray[count] == (NULL))
 			{
 				free_words(marray, count);

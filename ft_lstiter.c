@@ -6,7 +6,7 @@
 /*   By: andrefe2 <andrefe2@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/14 11:36:15 by andrefe2          #+#    #+#             */
-/*   Updated: 2026/11/14 12:49:42 by andrefe2         ###   ########.fr       */
+/*   Updated: 2026/11/17 15:17:14 by andrefe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,3 +22,21 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 		lst = lst->next;
 	}
 }
+/*
+void	 print_content(void *content)
+{
+	printf("%s\n", (char *)content);
+}
+
+int main(void)
+{
+	t_list *head;
+	t_list *second;
+
+	head = ft_lstnew("Porto");
+	second = ft_lstnew("Braga");
+	head->next = second;
+	ft_lstiter(head, print_content);
+	return (0);
+}
+*/

@@ -6,7 +6,7 @@
 /*   By: andrefe2 <andrefe2@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/10 17:37:54 by andrefe2          #+#    #+#             */
-/*   Updated: 2026/11/14 12:45:06 by andrefe2         ###   ########.fr       */
+/*   Updated: 2026/11/17 15:20:54 by andrefe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	}
 	str[i] = '\0';
 	return (str);
- }
+}
 /*
 char	ft_change(unsigned int i, char c)
 {

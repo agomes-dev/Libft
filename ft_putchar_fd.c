@@ -6,7 +6,7 @@
 /*   By: andrefe2 <andrefe2@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/10 11:48:15 by andrefe2          #+#    #+#             */
-/*   Updated: 2026/11/10 14:35:22 by andrefe2         ###   ########.fr       */
+/*   Updated: 2026/11/17 11:26:02 by andrefe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,3 +16,9 @@ void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);
 }
+/*
+int	main(void)
+{
+	ft_putchar_fd('c', 1);
+}
+*/

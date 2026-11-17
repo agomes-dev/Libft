@@ -6,7 +6,7 @@
 /*   By: andrefe2 <andrefe2@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/04 15:09:36 by andrefe2          #+#    #+#             */
-/*   Updated: 2026/11/16 12:50:41 by andrefe2         ###   ########.fr       */
+/*   Updated: 2026/11/17 12:58:36 by andrefe2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,6 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }
 /*
-#include <stdio.h>
-
 int	main(void)
 {
 	char	str[] = "HELLO";
